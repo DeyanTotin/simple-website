@@ -11,3 +11,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     document.getElementById('age').textContent = age;
 });
+
