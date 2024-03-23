@@ -4,9 +4,16 @@ html body {
     overflow-y: auto;
 }
 
+
 ::-webkit-scrollbar {
-    display: none;
     scroll-behavior: smooth;
+    width: 10px;
+    background-color: #a4a4ad67;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a4a4ad67;
+    border-radius: 10px;
 }
 
 
@@ -59,7 +66,11 @@ p {
     text-align: justify;
     position: static;
 
+}
 
+
+#about-me-box{
+    width: 500px;
 }
 
 
@@ -107,10 +118,9 @@ h2 {
 .social-links {
     display: flex;
     justify-content: center;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
+    align-items: center;
+    margin: 20px;
+
 
 }
 
@@ -118,55 +128,18 @@ h2 {
 .social-links a {
     margin-right: 10px;
     padding-bottom: 3px;
-    animation: bounce 1s infinite;
-    animation-iteration-count: 1;
     display: block;
+    
 
 }
 
-.social-links a:nth-child(1):hover {
+.social-links a:hover{
     transform: scale(1.2);
 }
 
 
-.social-links a:nth-child(2):hover {
-    transform: scale(1.2);
-}
 
 
-.social-links a:nth-child(2) {
-    animation-delay: 0.1s;
-}
-
-
-.social-links a:nth-child(3):hover {
-    transform: scale(1.2);
-}
-
-.social-links a:nth-child(3) {
-    animation-delay: 0.2s;
-
-}
-
-
-@keyframes bounce {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-
-}
-
-
-
-body {
-    background-color: #5461C3
-}
 
 .box-left {
     position: fixed;
@@ -204,6 +177,10 @@ body {
     }
 }
 
+
+
+
+
 .wave.-one {
     animation: rotate 20000ms infinite linear;
     opacity: 5%;
@@ -223,7 +200,7 @@ body {
     padding: 0;
     margin: 0;
     text-align: center;
-    
+
 }
 
 .side-by-side li {
@@ -247,7 +224,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-
-
