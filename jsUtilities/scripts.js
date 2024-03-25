@@ -11,20 +11,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     document.getElementById('age').textContent = age;
 });
-
-
-document.addEventListener('DOMContentLoaded', function () {
-
-    let links = document.querySelectorAll('.nav-link');
-
-    links.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            let href = this.getAttribute('href');
-            let element = document.querySelector(href);
-            window.location.href = href;
-
-        }());
-    });
-
-});
