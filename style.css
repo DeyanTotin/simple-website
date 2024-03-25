@@ -50,7 +50,6 @@ p {
     padding: 10px;
     color: #f0f3f9;
     line-height: 1.6;
-
     border-radius: 5px;
 
 }
@@ -69,7 +68,7 @@ p {
 }
 
 
-#about-me-box{
+#about-me-box {
     width: 500px;
 }
 
@@ -129,11 +128,11 @@ h2 {
     margin-right: 10px;
     padding-bottom: 3px;
     display: block;
-    
+
 
 }
 
-.social-links a:hover{
+.social-links a:hover {
     transform: scale(1.2);
 }
 
@@ -225,4 +224,27 @@ h2 {
     justify-content: center;
     align-items: center;
 
+}
+
+.project {
+    width: 500px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    
+}
+.project h3 {
+    color: #f0e7e7;
+    
+}
+.project a {
+    color: #007bff;
+    text-decoration: none;
+    filter: brightness(130%);
+
+}
+
+.project p {
+    font-size: 18px;
 }
