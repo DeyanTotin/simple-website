@@ -231,10 +231,9 @@ h2 {
 
 .center-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically by default */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
 .project {
@@ -265,14 +264,14 @@ h2 {
 
 @media screen and (min-width: 768px) {
     .center-container {
-        flex-direction: row; /* Display items side by side on larger screens */
-        gap: 50px;
+        flex-direction: row;
+        gap: 1px;
     }
     #about-me-box {
-        width: 500px; /* Adjust width for about me box */
+        width: 500px;
         
     }
     .box-variant-1 {
-        width: 100%; /* Adjust width for projects box */
+        width: 85%; 
     }
 }
