@@ -49,7 +49,7 @@ html body {
     margin: auto;
     background-color: rgba(179, 167, 167, 0.05);
     backdrop-filter: blur(10px);
-    
+    -webkit-backdrop-filter: blur(10px);
 }
 
 
@@ -280,7 +280,7 @@ h2 {
     }
 
     #about-me-box {
-        width: 400px;
+        width: 380px;
 
     }
 
