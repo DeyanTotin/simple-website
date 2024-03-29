@@ -2,6 +2,8 @@ html body {
     background-color: #0b121e;
     font-size: 100%;
     overflow-y: auto;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -280,7 +282,7 @@ h2 {
     }
 
     #about-me-box {
-        width: 380px;
+        width: 400px;
 
     }
 
