@@ -4,6 +4,7 @@ html body {
     overflow-y: auto;
     display: flex;
     justify-content: center;
+    min-width: 1024px;
 }
 
 
@@ -238,7 +239,10 @@ h2 {
     background-color: black;
     border-radius: 10px;
     text-align: justify;
-    position: static;
+    position: absolute; /* Change position to fixed */
+    left: 20px; /* Adjust the left position as needed */
+    top: 50%; /* Align to the middle of the viewport */
+    transform: translateY(-50%); /* Center vertically */
 
 
 }
