@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     fetchProjects();
+
 });
 
 function fetchProjects() {
@@ -47,3 +48,57 @@ function displayProjects(repos) {
         projectsContainer.appendChild(projectElement);
     });
 }
+
+
+function toggleDivVisibility() {
+    var screenWidth = window.innerWidth;
+    var div = document.getElementById('right-box');
+    
+    if (screenWidth <=1370) {
+      div.classList.add('hidden');
+    } else {
+      div.classList.remove('hidden'); // Show the div
+    }
+  }
+
+
+toggleDivVisibility()
+window.addEventListener('resize', toggleDivVisibility);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var clickArea = document.querySelector('#click-area-left');
+    var rightBox = document.getElementById('right-box');
+    
+    clickArea.addEventListener('click', function(event) {
+
+        rightBox.classList.toggle('hidden');
+    });
+
+    function toggleButtonClickability() {
+        var screenWidth = window.innerWidth;
+        
+        if (screenWidth > 1370) {
+            clickArea.style.display = 'none';
+        } else {
+            clickArea.style.display = 'block';
+        }
+    }
+
+    toggleButtonClickability();
+
+    window.addEventListener('resize', toggleButtonClickability);
+});
+
+
+function adjustMarginRight() {
+    var windowWidth = window.innerWidth;
+    var rightBox = document.getElementById('right-box');
+   
+    var desiredMargin = Math.max((windowWidth - 1370) / 2.5, 20);
+    
+    rightBox.style.marginRight = desiredMargin + 'px';
+}
+
+window.addEventListener('resize', adjustMarginRight);
+adjustMarginRight();
