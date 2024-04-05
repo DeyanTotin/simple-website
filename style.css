@@ -44,11 +44,11 @@ html body {
 #title-box {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: fit-content;
     padding: 20px;
+    margin: 16px;
     border: 5px solid gray;
-    margin: auto;
+    
     border-radius: 70px;
     background-color: var(--clr-dark);
     margin-bottom: 20px;
