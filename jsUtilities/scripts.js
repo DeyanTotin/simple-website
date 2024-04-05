@@ -59,7 +59,7 @@ function toggleDivVisibility() {
     var screenWidth = window.innerWidth;
     var div = document.getElementById('right-box');
 
-    if (screenWidth <= 1370) {
+    if (screenWidth <= 1300) {
         div.classList.add('hidden');
     } else {
         div.classList.remove('hidden');
@@ -98,7 +98,7 @@ function adjustMarginRight() {
     var windowWidth = window.innerWidth;
     var rightBox = document.getElementById('right-box');
 
-    var desiredMargin = Math.max((windowWidth - 1370) / 2.5, 10);
+    var desiredMargin = Math.max((windowWidth - 1370) / 4, 10);
 
     rightBox.style.marginRight = desiredMargin + 'px';
 }
