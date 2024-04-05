@@ -86,7 +86,7 @@ p {
     border: 10px solid var(--clr-dark-gray);
     padding-top: 0px;
     margin: 20px;
-    background-color: black;
+    background-color: var(--clr-dark);
     border-radius: 10px;
     text-align: justify;
     position: static;
@@ -250,9 +250,6 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-    .center-container {
-        flex-direction: row;
-    }
 
     #about-me-box {
         width: 400px;
@@ -309,19 +306,18 @@ h2 {
 
 
 #left-box {
-    display: flex;
+
     justify-content: space-evenly;
     flex-direction: column;
     position: fixed;
-    top: 25vh ;
+    top: 25vh;
     left: 15vh;
     padding: 8px;
     max-width: 300px;
     height: fit-content;
     background-color: rgba(92, 92, 95, 1);
     border-radius: 10px;
-    border-style:outset;
+    border-style: outset;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-}
 
+}
