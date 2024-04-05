@@ -56,8 +56,8 @@ function displayProjects(repos) {
 
 
 function toggleDivVisibility() {
-    var screenWidth = window.innerWidth;
-    var div = document.getElementById('right-box');
+    let screenWidth = window.innerWidth;
+    let div = document.getElementById('right-box');
 
     if (screenWidth <= 1500) {
         div.classList.add('hidden');
@@ -69,9 +69,10 @@ function toggleDivVisibility() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var clickArea = document.querySelector('#click-area-left');
-    var rightBox = document.getElementById('right-box');
+    let clickArea = document.querySelector('#click-area-left');
+    let rightBox = document.getElementById('right-box');
 
+    
     clickArea.addEventListener('click', function (event) {
 
         rightBox.classList.toggle('hidden');
@@ -79,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function toggleButtonClickability() {
-        var screenWidth = window.innerWidth;
+        let screenWidth = window.innerWidth;
 
         if (screenWidth > 1500) {
             clickArea.style.display = 'none';
@@ -96,10 +97,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function adjustMarginRight() {
-    var windowWidth = window.innerWidth;
-    var rightBox = document.getElementById('right-box');
+    let windowWidth = window.innerWidth;
+    let rightBox = document.getElementById('right-box');
 
-    var desiredMargin = Math.max((windowWidth - 1370) / 4, 10);
+    let desiredMargin = Math.max((windowWidth - 1370) / 4, 10);
 
     rightBox.style.marginRight = desiredMargin + 'px';
 }
