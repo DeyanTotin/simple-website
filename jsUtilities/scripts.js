@@ -59,7 +59,7 @@ function toggleDivVisibility() {
     var screenWidth = window.innerWidth;
     var div = document.getElementById('right-box');
 
-    if (screenWidth <= 1300) {
+    if (screenWidth <= 1500) {
         div.classList.add('hidden');
     } else {
         div.classList.remove('hidden');
@@ -77,10 +77,11 @@ document.addEventListener('DOMContentLoaded', function () {
         rightBox.classList.toggle('hidden');
     });
 
+
     function toggleButtonClickability() {
         var screenWidth = window.innerWidth;
 
-        if (screenWidth > 1370) {
+        if (screenWidth > 1500) {
             clickArea.style.display = 'none';
         } else {
             clickArea.style.display = 'block';
