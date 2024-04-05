@@ -52,7 +52,7 @@ html body {
     border-radius: 70px;
     background-color: var(--clr-dark);
     margin-bottom: 20px;
-    animation: grow 2s ease 1;
+    animation: grow 1.8s ease 1;
 
 }
 
@@ -67,7 +67,7 @@ html body {
     -webkit-backdrop-filter: blur(10px);
     flex: 1;
     margin-left: px;
-    animation: grow 2s ease 1;
+    animation: grow 1.6s ease 1;
 }
 
 
