@@ -303,10 +303,6 @@ h2 {
     z-index: 1;
 }
 
-#click-area-left:hover {
-    background: #39393b;
-}
-
 
 #left-box {
     display: flex;
