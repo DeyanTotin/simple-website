@@ -57,6 +57,7 @@ html body {
 }
 
 #box-main-content {
+    position: relative;
     width: fit-content;
     max-width: 100%;
     border: 2px solid var(--clr-dark-gray);
@@ -261,9 +262,9 @@ h2 {
     }
 
     .box-variant-1 {
-        width: 100%;
-        max-width: 768px;
-        
+        width: 90%;
+
+
     }
 
 
@@ -360,5 +361,17 @@ h2 {
 @media screen and (max-width: 768px) {
     #box-main-content {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #left-box {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        margin-top: 24px;
+        top: 130%;
+        left: auto;
     }
 }
