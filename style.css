@@ -261,7 +261,9 @@ h2 {
     }
 
     .box-variant-1 {
-        width: 85%;
+        width: 100%;
+        max-width: 768px;
+        
     }
 
 
