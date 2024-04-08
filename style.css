@@ -375,3 +375,13 @@ h2 {
         left: auto;
     }
 }
+
+@media screen and (max-width: 768px) {
+    ::-webkit-scrollbar {
+        display: none; 
+    }
+    body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
