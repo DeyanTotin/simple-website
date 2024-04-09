@@ -381,6 +381,6 @@ h2 {
         -webkit-appearance: none;
     }  
   body{
-    overflow: hidden;
+    overflow-y: hidden;
   }
 }
