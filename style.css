@@ -347,7 +347,7 @@ h2 {
     }
   }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 432px) {
     #box-main-content {
         flex-direction: column;
     }
