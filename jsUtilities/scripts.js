@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     toggleDivVisibility()
     window.addEventListener('resize', toggleDivVisibility);
-
+    moveLeftBox();
 });
 
 
@@ -105,3 +105,9 @@ function adjustMarginRight() {
     rightBox.style.marginRight = desiredMargin + 'px';
 }
 
+function moveLeftBox() {
+    var leftBox = document.getElementById('left-box');
+    var mainContent = document.getElementById('box-main-content');
+    var parent = mainContent.parentNode;
+    parent.insertBefore(leftBox, mainContent.nextSibling);
+}
