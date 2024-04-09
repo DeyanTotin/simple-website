@@ -51,7 +51,7 @@ html body {
     
     border-radius: 70px;
     background-color: var(--clr-dark);
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     animation: grow 1.8s ease 1;
 
 }
@@ -62,7 +62,7 @@ html body {
     max-width: 100%;
     border: 2px solid var(--clr-dark-gray);
     border-radius: 13px;
-    margin: auto;
+    margin: 16px;
     backdrop-filter: blur(10px);
     animation-name: grow;
     -webkit-backdrop-filter: blur(10px);
@@ -89,7 +89,7 @@ p {
     max-width: 100%;
     border: 10px solid var(--clr-dark-gray);
     padding-top: 0px;
-    margin: 20px;
+    margin: 16px;
     background-color: var(--clr-dark);
     border-radius: 10px;
     text-align: justify;
@@ -110,17 +110,6 @@ a:visited {
     background-color: transparent;
 }
 
-
-
-#profile-pic-border img {
-    width: 180px;
-    border: 10px solid var(--clr-dark-gray);
-    border-radius: 10px;
-    margin-left: 20px;
-    background-color: var(--clr-dark);
-    display: block;
-    margin: 0 auto 20px;
-}
 
 
 h2 {
@@ -361,6 +350,14 @@ h2 {
 @media screen and (max-width: 768px) {
     #box-main-content {
         flex-direction: column;
+    }
+
+    #left-box{
+        top: auto;
+        justify-content: center;
+        position: relative;
+        margin-top: 24px;
+        align-items: center;
     }
 }
 
